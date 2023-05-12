@@ -33,9 +33,6 @@ jobs:
       - name: Build the app
         run: pnpm run build
 
-      - name: Set Cloudflare Pages environment
-        run: echo "CF_PAGES_SITE=${{ env.CF_PAGES_SITE }}" >> $GITHUB_ENV
-
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
