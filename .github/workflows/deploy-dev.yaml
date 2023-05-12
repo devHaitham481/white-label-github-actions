@@ -42,5 +42,6 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN}}
           accountId: ${{secrets.CF_ACCOUNT_ID}}
           projectName: "white-label-github-actions"
+          directory: ../../static/
           # Optional: Enable this if you want to have GitHub Deployments triggered
           # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
