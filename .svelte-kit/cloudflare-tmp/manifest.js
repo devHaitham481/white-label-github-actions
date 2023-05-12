@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["cloudflare/favicon.ico","repguide/favicon.ico","whitelabel/favicon.ico"]),
 	mimeTypes: {".ico":"image/vnd.microsoft.icon"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.703092dd.js","app":"_app/immutable/entry/app.091cb54f.js","imports":["_app/immutable/entry/start.703092dd.js","_app/immutable/chunks/index.e6505d68.js","_app/immutable/chunks/singletons.1115f767.js","_app/immutable/chunks/index.a76d1baa.js","_app/immutable/entry/app.091cb54f.js","_app/immutable/chunks/preload-helper.41c905a7.js","_app/immutable/chunks/index.e6505d68.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.4dd53edb.js","app":"_app/immutable/entry/app.0cf4c9ac.js","imports":["_app/immutable/entry/start.4dd53edb.js","_app/immutable/chunks/index.e6505d68.js","_app/immutable/chunks/singletons.e218a88e.js","_app/immutable/chunks/index.a76d1baa.js","_app/immutable/entry/app.0cf4c9ac.js","_app/immutable/chunks/preload-helper.41c905a7.js","_app/immutable/chunks/index.e6505d68.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../output/server/nodes/0.js'),
 			() => import('../output/server/nodes/1.js'),
