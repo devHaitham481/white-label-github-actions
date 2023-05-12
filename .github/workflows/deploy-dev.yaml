@@ -41,7 +41,7 @@ jobs:
         with:
           apiToken: "3d8b9791e512cae3eb6c72a59a136b2444706"
           accountId: "b39121ff87d896114dbae7a2b0e61e"
-          site_id: "white-label-github-actions"
+          projectName: "white-label-github-actions"
           directory: ../../static/
           # Optional: Enable this if you want to have GitHub Deployments triggered
-          # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          gitHubToken: "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"
