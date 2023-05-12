@@ -39,8 +39,8 @@ jobs:
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN}}
-          accountId: ${{secrets.CF_ACCOUNT_ID}}
+          apiToken: "3d8b9791e512cae3eb6c72a59a136b2444706"
+          accountId: "b39121ffc87d896114dbae7a2b0e61e"
           projectName: "white-label-github-actions"
           directory: ../../static/
           # Optional: Enable this if you want to have GitHub Deployments triggered
