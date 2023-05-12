@@ -39,5 +39,5 @@ jobs:
           apiToken: 3d8b9791e512cae3eb6c72a59a136b2444706
           accountId: b39121ff87d896114dbae7a2b0e61e
           projectName: white-label-github-actions
-          directory: ../../static/
+          directory: .svelte-kit
           # Optional: Enable this if you want to have GitHub Deployments triggered
