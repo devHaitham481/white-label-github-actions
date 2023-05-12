@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    environment: cloudflare
 
     steps:
       - name: Checkout code
@@ -28,9 +29,11 @@ jobs:
         run: echo "CF_PAGES_SITE=${{ env.CF_PAGES_SITE }}" >> $GITHUB_ENV
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/cloudflare-pages-action@1.8.0
+        uses: cloudflare/pages-action@v1
         with:
-          apiToken: 3d8b9791e512cae3eb6c72a59a136b2444706 
-          organizationId: ${{ secrets.CF_ORGANIZATION_ID }}
-          script: npm ci && npm run build
-          site: ${{ env.CF_PAGES_SITE }}
+          apiToken: ${{ secrets.CF_API_TOKEN}}
+          accountId: CF_ACCOUNT_ID
+          projectName: white-label-github-actions 
+          directory: YOUR_ASSET_DIRECTORY
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
