@@ -37,7 +37,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: 3d8b9791e512cae3eb6c72a59a136b2444706
-          accountId: b39121ff87d896114dbae7a2b0e61e
+          accountId: b39121ffc87d896114dbae7a2b0e61ee
           projectName: white-label-github-actions
           directory: .svelte-kit
           # Optional: Enable this if you want to have GitHub Deployments triggered
