@@ -40,8 +40,8 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN}}
-          accountId: CF_ACCOUNT_ID
-          projectName: white-label-github-actions
-          directory: YOUR_ASSET_DIRECTORY
+          accountId: ${{secrets.CF_ACCOUNT_ID}}
+          projectName: "white-label-github-actions"
+          # directory: YOUR_ASSET_DIRECTORY
           # Optional: Enable this if you want to have GitHub Deployments triggered
           # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
