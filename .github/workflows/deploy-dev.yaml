@@ -13,11 +13,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+      - name: Install pnpm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.5.0
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, gulp, prettier, typescript]
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18 
+          node-version: 18
 
       - name: Install dependencies
         working-directory: .
@@ -34,7 +41,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN}}
           accountId: CF_ACCOUNT_ID
-          projectName: white-label-github-actions 
+          projectName: white-label-github-actions
           directory: YOUR_ASSET_DIRECTORY
           # Optional: Enable this if you want to have GitHub Deployments triggered
           # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
